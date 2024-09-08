@@ -1,0 +1,82 @@
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+
+* {
+  background-color: grey;
+}
+.title {
+  font-size: 50px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 100;
+  font-style: oblique;
+  font-variant: normal;
+  font-feature-settings: "afrc";
+}
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.slider img {
+  display: none;
+  height: 500px;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+img.displaySlide {
+  display: block;
+}
+.slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(50%);
+  font-size: 2rem;
+  padding: 10px 15px;
+  background-color: hsla(0, 0%, 0%, 0.544);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.l {
+  left: 25%;
+}
+.r {
+  right: 25%;
+}
+.sa {
+  font-size: 70px;
+}
+h2 {
+  font-size: larger;
+}
+/* min-width 641px, medium screens */ /* Credits - https://gist.github.com/bartholomej/8415655 */
+@media only screen and (max-width: 40em) {
+  .title {
+    font-size: 20px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-weight: 100;
+    font-style: oblique;
+    font-variant: normal;
+    font-feature-settings: "afrc";
+  }
+  .l {
+    left: 0%;
+  }
+  .r {
+    right: 0%;
+  }
+  .sa {
+    font-size: 20px;
+  }
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .l {
+    left: 0%;
+  }
+  .r {
+    right: 0%;
+  }
+  .sa {
+    font-size: 30px;
+  }
+}
